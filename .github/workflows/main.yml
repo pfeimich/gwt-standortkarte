@@ -9,8 +9,8 @@ jobs:
     env:
       DOCKER_ACCOUNT: pfeimich
       DOCKER_REPO: standortkarte
-      DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-      DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}} 
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }} 
       BUILD_NUMBER: ${{ github.run_number }}
     runs-on: ubuntu-latest
     steps:
